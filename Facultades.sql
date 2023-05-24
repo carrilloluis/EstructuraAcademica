@@ -45,10 +45,10 @@ CREATE TABLE IF NOT EXISTS `AcademicalFacultiesAdditionals` (
 //
 DELIMITER ;
 
-ALTER TABLE `FacultyId` 
+ALTER TABLE `AcademicalFacultiesAdditionals` 
 ADD CONSTRAINT `FK_FacultyHasAdditional` FOREIGN KEY (`FacultyId`)
 REFERENCES `AcademicalFaculties`(`Id`);
 
-ALTER TABLE `FacultyId`
+ALTER TABLE `AcademicalFacultiesAdditionals`
 ADD CONSTRAINT `FK_FacultyTypeAdditional` FOREIGN KEY (`Type`)
 REFERENCES `AcademicalFaculties_`(`Id`);
